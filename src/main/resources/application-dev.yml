@@ -1,54 +1,20 @@
 spring:
-  # 表示放在classpath的i18n文件夹，文件前缀为mess
-  messages:
-    basename: language/messages
-  datasource:
-    # driverClassName: net.sf.log4jdbc.DriverSpy
-    # url: jdbc:log4jdbc:mysql://mysql.zhangzp.cn:3306/hadoop2
-    driverClassName: net.sf.log4jdbc.DriverSpy
-    url: jdbc:log4jdbc:mysql://192.168.0.248:3306/exchange?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull
-    username: admin
-    password: bckj2018
-    filters: stat
-    maxActive: 30
-    initialSize: 5
-    maxWait: 60000
-    minIdle: 5
-    maxIdle: 20
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 1200000
-
   ###文件上传限制
   http:
     multipart:
       maxFileSize: 100Mb
       maxRequestSize: 100Mb
-
   ###redis配置
   redis:
-    host: 192.168.0.226
+    host: 47.75.124.29
     port: 46379
     password: 123456
     maxTotal: 60000
     maxIdle: 1000
     maxWaitMillis: 1000
     database: 2
-  rabbitmq:
-    # 配置rabbitMQspring:
-    host: 192.168.0.226
-    port: 5672
-    username: guest
-    password: guest
-    exchangesname: pmq-exchange
-    queue.asset: asset
-    queue.cash: cash
-    queue.btc.market.trade: btc_market_trade
-    queue.eth.market.trade: eth_market_trade
-    queue.usdt.market.trade: usdt_market_trade
-    queue.update.detail: update_trade_detail
-    queue.update.asset: update_user_asset
   mongodb:
-    host: 192.168.0.244
+    host: 47.75.124.29
     port: 27017
     database: exchange
     username: dev
