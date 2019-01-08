@@ -1,0 +1,108 @@
+spring:
+  # 表示放在classpath的i18n文件夹，文件前缀为mess
+  messages:
+    basename: language/messages
+  datasource:
+    # driverClassName: net.sf.log4jdbc.DriverSpy
+    # url: jdbc:log4jdbc:mysql://mysql.zhangzp.cn:3306/hadoop2
+    driverClassName: net.sf.log4jdbc.DriverSpy
+    url: jdbc:log4jdbc:mysql://192.168.0.248:3306/exchange?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull
+    username: admin
+    password: bckj2018
+    filters: stat
+    maxActive: 30
+    initialSize: 5
+    maxWait: 60000
+    minIdle: 5
+    maxIdle: 20
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 1200000
+
+  ###文件上传限制
+  http:
+    multipart:
+      maxFileSize: 100Mb
+      maxRequestSize: 100Mb
+
+  ###redis配置
+  redis:
+    host: 192.168.0.226
+    port: 46379
+    password: 123456
+    maxTotal: 60000
+    maxIdle: 1000
+    maxWaitMillis: 1000
+    database: 2
+  rabbitmq:
+    # 配置rabbitMQspring:
+    host: 192.168.0.226
+    port: 5672
+    username: guest
+    password: guest
+    exchangesname: pmq-exchange
+    queue.asset: asset
+    queue.cash: cash
+    queue.btc.market.trade: btc_market_trade
+    queue.eth.market.trade: eth_market_trade
+    queue.usdt.market.trade: usdt_market_trade
+    queue.update.detail: update_trade_detail
+    queue.update.asset: update_user_asset
+  mongodb:
+    host: 192.168.0.244
+    port: 27017
+    database: exchange
+    username: dev
+    password: 123456
+#mybatis:
+#  mapperLocations: classpath*:/com/exchang/**/mapper/*Mapper.xml
+
+### 短信
+hb:
+  uname: 10690356
+  passwd: Whztyz-29
+
+### 文件上传
+oss:
+  # OSS访问编号
+  accessKeyId: LTAIp4oYoDb2fhKV
+  # OSS访问密钥
+  accessKeySecret: ZGMCYSSq8FZ7xXMqpyhzaHvmSZ6PyN
+  # OSS存储空间
+  bucketName: shanghai-ex-file
+  file:
+    maxsize: 102400
+    file_img_extension: bmp,jpg,gif,jpeg,png
+
+
+# 交易所信息
+exchange:
+  # 交易所发行货币英文名称（只允许大写）
+  coinNameEn: BRT
+  # 谷歌认证参数为交易所的域名
+  googleAuthPath: www.bitrr.io
+  # 交易所英文名称（只允许大写）
+  sysNameEn: BITRR
+  # 交易所中文名称
+  sysNameZh: 比特人人
+
+email:
+  # 用来发送验证码的邮箱账号
+  account: xuys24@163.com
+  # 用来发送验证码的邮箱密码
+  pwd: b1lT7x
+  # 定义发送邮件的途径（1 gmail邮件    2 QQ邮箱    3 163邮箱）
+  type: 3
+
+### 实名认证
+authapi:
+  host: "http://idenauthen.market.alicloudapi.com"
+  path: "/idenAuthentication"
+  appcode: "6ca4adeb760e4e81a0f2807a4cbca8a3"
+  apiSuccess: "0000"
+  apiFailure: "0008"
+  apiCheckFailure: "0004"
+  total: 5
+
+### 挖矿密钥
+mining:
+  nbPwd: "af4fcef5-d617-4751-aa7d-630733df6136"
