@@ -1,4 +1,4 @@
-package com.hhh.quality.user.login.service;
+package com.hhh.quality.api.user.login.service;
 
 
 import com.hhh.quality.platform.response.ResponseModel;

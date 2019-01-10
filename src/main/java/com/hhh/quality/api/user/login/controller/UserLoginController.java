@@ -1,4 +1,4 @@
-package com.hhh.quality.user.login.controller;
+package com.hhh.quality.api.user.login.controller;
 
 
 import com.estate.api.config.i18n.I18nUtils;

@@ -1,4 +1,4 @@
-package com.hhh.quality.user.login.domain.vo;
+package com.hhh.quality.api.user.login.domain.vo;
 
 public class LoginVo {
 

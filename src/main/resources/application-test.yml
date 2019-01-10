@@ -1,7 +1,4 @@
 spring:
-  # 表示放在classpath的i18n文件夹，文件前缀为mess
-  messages:
-    basename: language/messages
   datasource:
     # driverClassName: net.sf.log4jdbc.DriverSpy
     # url: jdbc:log4jdbc:mysql://mysql.zhangzp.cn:3306/hadoop2

@@ -1,4 +1,4 @@
-package com.hhh.quality.user.login.service.impl;
+package com.hhh.quality.api.user.login.service.impl;
 
 
 import com.hhh.quality.common.BCrypt;
@@ -12,9 +12,9 @@ import com.hhh.quality.platform.login.AuthenticationProvider;
 import com.hhh.quality.platform.login.Principal;
 import com.hhh.quality.platform.login.Verifier;
 import com.hhh.quality.platform.redis.RedisFactory;
-import com.hhh.quality.user.login.AppLoginVerifier;
-import com.hhh.quality.user.login.domain.UserAgent;
-import com.hhh.quality.user.login.mapper.UserAgentMapper;
+import com.hhh.quality.api.user.login.AppLoginVerifier;
+import com.hhh.quality.api.user.login.domain.UserAgent;
+import com.hhh.quality.api.user.login.mapper.UserAgentMapper;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;

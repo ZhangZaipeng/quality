@@ -1,4 +1,4 @@
-package com.hhh.quality.user.login;
+package com.hhh.quality.api.user.login;
 
 import com.hhh.quality.platform.login.impl.PasswordVerifier;
 

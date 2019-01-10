@@ -1,4 +1,4 @@
-package com.hhh.quality.user.login.service.impl;
+package com.hhh.quality.api.user.login.service.impl;
 
 import com.estate.api.basic.mapper.UserAgentMapper;
 import com.estate.api.config.i18n.I18nUtils;

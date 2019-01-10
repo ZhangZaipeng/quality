@@ -1,4 +1,4 @@
-package com.hhh.quality.user.login.domain;
+package com.hhh.quality.api.user.login.domain;
 
 import com.hhh.quality.platform.login.Principal;
 import java.io.Serializable;

@@ -1,7 +1,6 @@
-package com.hhh.quality.user;
+package com.hhh.quality.api.user;
 
-import com.estate.common.HBSmsUtil;
-import com.estate.common.enums.VerifyCodeEnum;
+import com.hhh.quality.common.HBSmsUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

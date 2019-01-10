@@ -1,6 +1,6 @@
-package com.hhh.quality.user.login.mapper;
+package com.hhh.quality.api.user.login.mapper;
 
-import com.hhh.quality.user.login.domain.UserAgent;
+import com.hhh.quality.api.user.login.domain.UserAgent;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserAgentMapper {

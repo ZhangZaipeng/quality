@@ -1,4 +1,19 @@
 spring:
+  datasource:
+    # driverClassName: net.sf.log4jdbc.DriverSpy
+    # url: jdbc:log4jdbc:mysql://mysql.zhangzp.cn:3306/hadoop2
+    driverClassName: net.sf.log4jdbc.DriverSpy
+    url: jdbc:log4jdbc:mysql://47.75.124.29:3306/exchange?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull
+    username: quality
+    password: m_quality
+    filters: stat
+    maxActive: 30
+    initialSize: 5
+    maxWait: 60000
+    minIdle: 5
+    maxIdle: 20
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 1200000
   ###文件上传限制
   http:
     multipart:
@@ -13,14 +28,6 @@ spring:
     maxIdle: 1000
     maxWaitMillis: 1000
     database: 2
-  mongodb:
-    host: 47.75.124.29
-    port: 27017
-    database: exchange
-    username: dev
-    password: 123456
-#mybatis:
-#  mapperLocations: classpath*:/com/exchang/**/mapper/*Mapper.xml
 
 ### 短信
 hb:

@@ -1,4 +1,4 @@
-package com.hhh.quality.user.login.controller;
+package com.hhh.quality.api.user.login.controller;
 
 import com.estate.api.user.login.domain.RegisterVo;
 import com.estate.api.user.login.domain.ResetPwdVo;

@@ -1,4 +1,4 @@
-package com.hhh.quality.user.login;
+package com.hhh.quality.api.user.login;
 
 import com.hhh.quality.platform.login.AuthenticationProvider;
 import com.hhh.quality.platform.login.impl.CookieIdentityValidator;
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SPIdentityValidator extends CookieIdentityValidator {
+public class QIdentityValidator extends CookieIdentityValidator {
 
   @Autowired
   private AuthenticationProvider authenticationProvider;
@@ -23,7 +23,7 @@ public class SPIdentityValidator extends CookieIdentityValidator {
 
   @Override
   protected String getPrincipalcookieName() {
-    return "ES_PRINCIPAL";
+    return "Q_PRINCIPAL";
   }
 
   @Override
@@ -33,12 +33,12 @@ public class SPIdentityValidator extends CookieIdentityValidator {
 
   @Override
   protected String getvisitorCookieName() {
-    return "ES_VISITOR";
+    return "Q_VISITOR";
   }
 
   @Override
   protected String getBizLastLoginTimeCookieName() {
-    return "ES_BIZ_LASTLOGIN";
+    return "Q_BIZ_LASTLOGIN";
   }
 
   @Override
@@ -48,6 +48,6 @@ public class SPIdentityValidator extends CookieIdentityValidator {
 
   @Override
   protected String getLastLoginTimeCookieName() {
-    return "ES_LASTLOGIN";
+    return "Q_LASTLOGIN";
   }
 }

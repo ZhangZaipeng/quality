@@ -1,11 +1,11 @@
-package com.hhh.quality.user.login.service;
+package com.hhh.quality.api.user.login.service;
 
 
 import com.hhh.quality.platform.response.ResponseModel;
-import com.hhh.quality.user.login.domain.User;
-import com.hhh.quality.user.login.domain.UserAgent;
-import com.hhh.quality.user.login.domain.vo.RegisterVo;
-import com.hhh.quality.user.login.domain.vo.ResetPwdVo;
+import com.hhh.quality.api.user.login.domain.User;
+import com.hhh.quality.api.user.login.domain.UserAgent;
+import com.hhh.quality.api.user.login.domain.vo.RegisterVo;
+import com.hhh.quality.api.user.login.domain.vo.ResetPwdVo;
 
 /**
  * 用户----相关接口
